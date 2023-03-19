@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "roboto regular";
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto regular";
+  color: #cac4d0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/cloudylarge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  height: 100%;
+  width: calc(100vw - 200px);
+  position: relative;
+}
+.searchcity {
+  width: 446px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #cac4d0;
+}
+.searchwrap {
+  width: 506px;
+  height: 56px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 56px;
+  background: #302d38;
+}
+
+#searchNow {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+#celsius {
+  width: 58px;
+  height: 58px;
+}
+
+#celsius,
+#searchNow {
+  fill: #cac4d0;
+}
+
+.weatherwrap {
+  width: 100%;
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 40px;
+}
+.humidity {
+  font-size: 28px;
+  margin-left: 1.5%;
+  margin-top: 1%;
+}
+
+.country,
+.temperature {
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.temperature,
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  body {
+    background-image: url(./images/cloudysmall.jpg);
+  }
+  .wrap {
+    width: calc(100vw - 16px);
+  }
+  .searchwrap {
+    width: 100%;
+  }
+  .searchcity {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 32px;
+  }
+  .humidity {
+    font-size: 20px;
+    margin-left: 1.5%;
+  }
+
+  .country,
+  .temperature {
+    font-size: 44px;
+    font-weight: bolder;
+  }
+
+  #celsius {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .wrap {
+    width: calc(100vw - 32px);
+  }
+
+  .searchcity {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 36px;
+  }
+  .humidity {
+    font-size: 24px;
+  }
+
+  .country,
+  .temperature {
+    font-size: 52px;
+    font-weight: bolder;
+  }
+
+  #celsius {
+    width: 46px;
+    height: 46px;
+  }
+}
